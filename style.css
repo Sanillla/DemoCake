@@ -1,0 +1,235 @@
+h1 {
+    color: brown;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(209, 151, 151);
+}
+
+.title {
+    color: rgb(185, 20, 20);
+}
+
+#italic {
+    color: cadetblue;
+}
+
+nav {
+    background-color: rgb(111, 211, 241);
+    text-align: center;
+}
+
+.nav-wrapper {
+    background-color: rgb(119, 209, 236);
+}
+
+
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;  
+    padding: 25px;
+}
+
+.container {
+    border: 3px solid cadetblue;
+    margin: 30px 5px 0px 10;
+    padding: 10px 5px 10px 5px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: darkcyan;
+    margin: 10px;
+}
+
+@keyframes fadeMe {
+   0%{
+       opacity: 1;
+   } 
+   100%{
+       opacity: 0;
+   }
+}
+
+#box1 {
+    animation-name: fadeMe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation-name: rotation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle, lavender, lightpink, pink, rgb(245, 158, 158), rgb(240, 74, 74));
+}
+
+@keyframes getBigger {
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(.5);}
+}
+
+#box3 {
+    animation: getBigger 6s infinite ease-in;
+    border-radius: 50%;
+    background: rgb(118, 168, 168);
+}
+
+@keyframes changeColour {
+    0% {background-color: rgb(25, 141, 250);}
+    25% {background-color: rgb(12, 87, 158);}
+    50% {background-color: rgb(8, 49, 88);}
+    75% {background-color: rgb(48, 80, 110);}
+    100% {background-color: rgb(134, 187, 236);}
+}
+
+#box4 {
+    animation: changeColour 6s infinite;
+}
+
+@keyframes moveBox {
+    0% {left: 0px; top: 0px;}
+    25% {left: 100px; top: 0px;}
+    50% {left: 100px; top: 200px;}
+    75% {left: 0px; top: 200px;}
+    100% {left: 0px; top: 0px;}
+}
+
+#box5 {
+    position: relative;
+    animation: moveBox 6s infinite;
+    background: rgb(3, 109, 112);
+}
+
+#box6 {
+    top: 2px;
+    left: 2px;
+    position: relative;
+}
+
+
+html {
+    background: linear-gradient( rgb(217, 243, 243), rgb(109, 194, 209), rgb(217, 243, 243)); 
+}
+
+
+
+.circle-img {
+    border-radius: 30%;
+}
+
+.flex {
+    margin: 30px;
+    border: 3px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 30px;
+}
+
+.input-field {
+    margin: 20px;
+}
+
+form input, textarea, button {
+    display: block;
+    margin: 30px;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 20% ) ;
+    grid-template-rows: repeat(4, [row] auto  );
+    background-color: linear-gradient( rgb(217, 243, 243), rgb(109, 194, 209), rgb(217, 243, 243))f;
+    color: #444;
+}
+
+.Box {
+    background-color: rgb(156, 233, 243);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+    background-image: linear-gradient(rgb(147, 193, 209), rgb(199, 227, 235));
+
+}
+
+.a {
+    grid-column: col / span  2;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+.b {
+    grid-column: col 4 / span  2 ;
+    grid-row: row ;
+    display: flex;
+    justify-content: center;
+}
+    
+.d {
+    grid-column: col 3 / span  2 ;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(147, 193, 209), rgb(199, 227, 235));
+}
+
+.e {
+    grid-column: col / span  3;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
+
+.f {
+    grid-column: col 3 / span 1;
+    grid-row: row 1 ;
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.g {
+    grid-column: col / span  2;
+    grid-row: row 2 ;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 50;
+}
+
+.h {
+    grid-column: col 4/ span 2;
+    grid-row: row 3 ;
+    display: flex;
+    justify-content: center;
+}
